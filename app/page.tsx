@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 
 export default function Home() {
@@ -85,12 +86,12 @@ export default function Home() {
 <div>
 <h2 className="mt-8 mb-8">2. What do you want to learn or do more of at work?</h2>
 
-<p>I want to learn new technologies, and develop internal tools that would boost the Support team's productivity</p>
+<p>I want to learn new technologies, and develop internal tools that would boost the Support team&apos;s productivity</p>
 </div>
 <hr className="mt-8 mb-8"></hr>
 <div>
 <h2 className="mt-8 mb-8">3. Describe how you solved a challenge or technical issue that you faced in a previous role(preferably in a previous support role). How did you determine that your solution was successful? </h2>
-<p>A customer had a high severity technical challenge when they migrated from their existing payment provider to a new one. <br /> <br/>The problem arose when their end users attempted to place an order with a saved payment instrument resulting in failed transactions. It was determined that the system was still utilizing the old payment provider's token. <br /> <br/> The resolution was to delete all the existing saved payment instruments with the old token ID.
+<p>A customer had a high severity technical challenge when they migrated from their existing payment provider to a new one. <br /> <br/>The problem arose when their end users attempted to place an order with a saved payment instrument resulting in failed transactions. It was determined that the system was still utilizing the old payment provider&apos;s token. <br /> <br/> The resolution was to delete all the existing saved payment instruments with the old token ID.
   However, this was not that simple. <br /> <br/>There were two ways this could be done 1: export all the existing the payment instruments in an xml format, delete the old token, and re-upload the xml. This, however, could have been only be done by the Salesforce Support, as the module to export/import payment instruments was not visible to the customer. The challenge here was, the Support team was instructed not to perform this due to high-risk. <br /> <br/> 2nd method was to create a custom job using the script apis - however, customer was not technically sound. I took an initiative and created a job on my sandbox that performed this action. To test it out, I added dummy data in my sandbox, and ran the job - and it successfully performed the task. After that, I scheduled a quick call with the customer and shared them this code. The customer attempted to run it on a lower environment, and it was successful. Soon after, they ran it on their production instance, and  it was a success. <br /> <br/>
   Their problem was now successfully resolved! The customer closed the case and gave a 5 CSAT score with the following feedback:<br /> <br/>
   &quot;Ashok was very helpful and was dedicated to helping us resolve issues pertaining to customer payments. He went above and beyond to provide the best service I have ever experienced in my professional career.&quot;
